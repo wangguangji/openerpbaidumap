@@ -1,0 +1,19 @@
+.openerp .oe_view_manager .oe_view_manager_switch .oe_vm_switch_baidumap:after {
+  content: "0";
+}
+
+
+.openerp .oe_baidumap {
+    min-height: 500px;
+}
+
+.openerp .oe_view_manager_view_baidumap {
+  position: relative;
+}
+
+#editor-render-body {
+    position: relative;
+    width: 650px;
+    height: 350px;
+}
+

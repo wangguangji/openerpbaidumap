@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates>
+    <t t-name="BaiduMapView" id="element-map" class="oe_semantic_html_override editor-render" style="position:relative; width: 300px;">
+        <div t-att-id="widget.map_id" class="oe_baidumap"/>
+    </t>
+</templates>
