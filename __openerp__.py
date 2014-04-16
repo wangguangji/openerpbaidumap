@@ -10,6 +10,7 @@
     'version': '2.0',
     'depends': ['web'],
     'js': [
+           'static/lib/baiduApi.js',
            'static/src/js/baidumap.js'
            ],
     'qweb': [

@@ -1,6 +1,6 @@
 
 openerp.web_baidumap = function(instance) {
-    
+
     var _t = instance.web._t, 
         _lt = instance.web._lt;
     
@@ -17,9 +17,6 @@ openerp.web_baidumap = function(instance) {
             this._super.apply(this, arguments);
             this.has_been_loaded = $.Deferred();
             this.map_id = _.uniqueId();
-            document.write('<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />');
-            document.write('<style type="text/css">body, html, #locationmap {width: 100%;height: 100%;overflow: hidden;margin:0;}</style>');
-            document.write('<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.4&ak=FAdf6decc1e4e7690caf8f7e1f4c5312"></script>');
         },
         view_loading : function(r) {
             return this.load_baidumap(r);
@@ -28,7 +25,6 @@ openerp.web_baidumap = function(instance) {
             var self = this;
             this.fields_view = fields_view_get;
             this.$el.addClass(this.fields_view.arch.attrs['class']);
-            document.write('<div width="50%" height="50%" overflow="hidden" margin="0" id="locationmap"></div>');
             return self.alive(new instance.web.Model(this.dataset.model)
                 .call('fields_get')).then(function (fields) {
                     self.fields = fields;
